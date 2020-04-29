@@ -1,19 +1,16 @@
 <template>
   <div>
-    <h1>Create an Event, {{ user.name }}</h1>
-    <p>This event was created by {{ user.id }}</p>
-    <p>{{ getEventById(1) }}</p>
+    <h1>Create an Event</h1>
   </div>
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
+import Datepicker from 'vuejs-datepicker'
 export default {
-  computed: {
-    ...mapGetters(['getEventById']),
-    ...mapState(['user'], ['categories'])
+  components: {
+    Datepicker
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

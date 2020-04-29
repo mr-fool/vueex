@@ -18,6 +18,7 @@
     "@vue/cli-plugin-eslint": "^3.12.1",
     "@vue/cli-service": "^3.12.1",
     "@vue/eslint-config-prettier": "^3.0.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuejs-datepicker": "^1.6.2"
   }
 }
