@@ -1,5 +1,7 @@
 import EventService from '@/services/EventService.js'
 
+export const namespaced = true
+
 export const state = {
   events: [],
   eventsTotal: 0,
@@ -34,7 +36,10 @@ export const actions = {
         commit('SET_EVENTS', response.data)
       })
       .catch(error => {
-        console.log('There was an error:', error.response)
+        const notification = {
+          type: 'error',
+          message: 'There was a problem fetching events: ' + error.message
+        }
       })
   },
   fetchEvent({ commit, getters }, id) {
@@ -53,7 +58,6 @@ export const actions = {
     }
   }
 }
-
 export const getters = {
   getEventById: state => id => {
     return state.events.find(event => event.id === id)
