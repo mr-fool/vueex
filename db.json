@@ -231,6 +231,24 @@
       "date": "",
       "time": "5:00",
       "attendees": []
+    },
+    {
+      "id": 9655831,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "agag",
+      "description": "",
+      "location": "afa",
+      "date": "2020-05-06T05:38:00.000Z",
+      "time": "12:00",
+      "attendees": []
     }
   ]
 }
